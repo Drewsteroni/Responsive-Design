@@ -1,0 +1,143 @@
+/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1 {
+    font-size: 3vw;
+    color:  #660066;
+}
+nav {
+    background-color:#e6fff2;
+    /* border: solid #00b356; */
+    
+}
+nav .pages {
+    display: flex;
+    /* border: solid #00b356; */
+}
+nav .pages > a {
+    margin: 5px;
+    border: solid #00b356;
+    padding: 5px 10px 5px 10px;
+    font-size: 2vw;
+    text-decoration: none;
+    color:  #660066;
+    border-radius: 20px;
+    background-color: #66ff99;
+}
+header {
+    background-color: #ffe6ff;
+    display: flex;
+    color: #003300;
+    font-size: 2vw;
+}
+header a {
+    margin: 5px;
+    border: solid #cc00cc;
+    padding: 5px 10px 5px 10px;
+    font-size: 100%;
+    text-decoration: none;
+    color:  #003300;
+    border-radius: 20px;
+    background-color: #ff66ff;
+    
+}
+header img {
+    width: 50%;
+}
+.personal {
+    /* border: solid #00b356; */
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-evenly;
+}
+.MyInfo{
+    display: flex;
+    /* border: solid #00b356; */
+    flex-flow: column wrap;
+    align-items: center;
+    font-size: 2vw;
+    text-align: center;
+    max-width: 30%;
+}
+section img {
+    width: 100%;
+}
+section .projects {
+    /* border: solid #00b356; */
+    background-color: #ffe6ff;
+    color:  #003300;
+    text-align: center;
+    display: flex; 
+    flex-flow: row wrap;
+}
+section .projects > li {
+    /* border: solid #00b356; */
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    margin: 20px 20px 20px 20px;
+    font-size: 200%;
+}
+footer {
+    display: flex;
+    background-color:#e6fff2;
+    align-items: center;
+    flex-flow: column;
+    font-size: 5vw;
+    color: #003300;
+}
+footer a {
+    margin: 5px;
+    border: solid #00b356;
+    padding: 5px 10px 5px 10px;
+    font-size: 5vw;
+    text-decoration: none;
+    color:  #660066;
+    border-radius: 20px;
+    background-color: #66ff99;
+}
+@media only screen and (max-width: 1200px) { 
+    nav {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 750px) { 
+    nav .pages {
+        flex-flow: column ;
+        margin: 0;
+        align-items: center;
+    }
+    nav .pages > a {
+        margin: 0;
+    }
+    .personal {
+        flex-flow: column;
+        align-items: center;
+    }
+    .name {
+        margin-top: 10px;
+    }
+    section .projects {
+        justify-content: center;
+    }
+}
